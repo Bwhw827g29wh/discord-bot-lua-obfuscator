@@ -14,7 +14,7 @@ app = Flask('')
 
 @app.route('/')
 def main():
-    return "Your Bot Is Ready"
+    return "The Bot Is Ready"
 
 def run():
     app.run(host="0.0.0.0", port=8000)
@@ -27,7 +27,7 @@ def keep_alive():
 token = os.environ['DISCORD_TOKEN']
 # channel id of the channel you want the bot obfuscate in. 
 # with developer settings enabled right click channel and copy id. (bot works in direct messages as well)
-channel_id = 994709144449851452
+channel_id = 1369666166041219172
 
 bot = commands.Bot(command_prefix="!")
 bot.remove_command("help")
